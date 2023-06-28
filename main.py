@@ -20,8 +20,8 @@ if __name__ == '__main__':
         for i, line in enumerate(rFile):
             # phonk name
             indexes = findIndexes(line, ':')
-            # mm:ss ==> 6;  hh:mm:ss ==> 9
-            offset = 6 if len(indexes) == 1 else 9
+            # mm:ss ==> 5;  hh:mm:ss ==> 8
+            offset = 5 if len(indexes) == 1 else 8
             name = line[offset : len(line) - 1]
 
             # open YouTube with specified query
